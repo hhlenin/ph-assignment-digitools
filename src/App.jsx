@@ -2,6 +2,7 @@ import './App.css'
 import {ToastContainer, toast, Bounce} from 'react-toastify';
 import Navbar from "./components/navbar/Navbar.jsx";
 import Hero from "./components/hero/Hero.jsx";
+import Achievements from "./components/achievements/Achievements.jsx";
 
 function App() {
     // const notify = () => toast.info('Wow so easy !');
@@ -25,6 +26,7 @@ function App() {
 
       <Navbar></Navbar>
         <Hero></Hero>
+        <Achievements></Achievements>
     </>
   )
 }
