@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Product from "./products/Product.jsx";
+import Cart from "./cart/Cart.jsx";
+import Empty from "./cart/Empty.jsx";
 
 const DigitalTools = () => {
 
@@ -7,7 +9,7 @@ const DigitalTools = () => {
 
     return (
         <main className="container">
-            <div className="p-32 justify-center">
+            <div className="py-32 justify-center">
                 <div className="space-y-4 flex flex-col justify-center items-center">
                     <div className="text-center space-y-4">
                         <h3 className="text-5xl font-extrabold">Premium Digital Tools</h3>
@@ -19,6 +21,8 @@ const DigitalTools = () => {
                     </span>
                     <div className="pt-10">
                         <Product></Product>
+                        {/*<Cart></Cart>*/}
+                        {/*<Empty></Empty>*/}
                     </div>
                 </div>
             </div>
