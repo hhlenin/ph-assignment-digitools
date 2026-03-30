@@ -1,5 +1,5 @@
 import React from 'react';
-import randIng from "../../../assets/products/design-tool.png"
+import randIng from "../../../../public/products/design-tool.png"
 
 const Product = () => {
     return (
