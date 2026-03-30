@@ -1,6 +1,7 @@
 import './App.css'
 import {ToastContainer, toast, Bounce} from 'react-toastify';
 import Navbar from "./components/navbar/Navbar.jsx";
+import Hero from "./components/hero/Hero.jsx";
 
 function App() {
     // const notify = () => toast.info('Wow so easy !');
@@ -23,6 +24,7 @@ function App() {
             {/*<button onClick={notify}>Notify !</button>*/}
 
       <Navbar></Navbar>
+        <Hero></Hero>
     </>
   )
 }

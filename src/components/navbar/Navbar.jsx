@@ -4,7 +4,7 @@ import {IoCartOutline} from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <nav className="navbar bg-base-100 shadow-sm">
+        <nav className="navbar bg-base-100 shadow-sm p-4">
             <div className="container flex">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -37,7 +37,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <div className="navbar-end gap-5 font-semibold">
+                <div className="navbar-end gap-4 font-semibold">
                     <button className="btn bg-white border-none"><IoCartOutline></IoCartOutline><div className="badge badge-sm badge-secondary">+99</div></button>
                     <a href="">Login</a>
                     <a className="btn">Get Started</a>
