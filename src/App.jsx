@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import Achievements from "./components/achievements/Achievements.jsx";
 import DigitalTools from "./components/digital-tools/DigitalTools.jsx";
+import GetStarted from "./components/get-started/GetStarted.jsx";
 
 function App() {
     // const notify = () => toast.info('Wow so easy !');
@@ -29,6 +30,7 @@ function App() {
         <Hero></Hero>
         <Achievements></Achievements>
         <DigitalTools></DigitalTools>
+      <GetStarted></GetStarted>
     </>
   )
 }
