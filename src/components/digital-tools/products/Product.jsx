@@ -1,8 +1,13 @@
 import {use} from 'react';
-// import randIng from "../../../../public/products/design-tool.png"
 
-const Product = ({productDataPromise}) => {
+const Product = ({productDataPromise, setCartData, totalCartItems, setTotalCartItems}) => {
     const products = use(productDataPromise)
+
+    function handleBuyNowButton(product) {
+        setCartData(product);
+        setTotalCartItems(totalCartItems + 1);
+    }
+
     return (
         <div className="grid grid-cols-3 gap-7">
             {
@@ -20,6 +25,7 @@ const Product = ({productDataPromise}) => {
 
                             <span className="text-xl font-bold">${product.price}<span className="text-[#627382] capitalize">/{product.recurrence}</span></span>
                             <ul className=" flex flex-col gap-2 text-xs">
+
                                 {
                                     product.features.map((feature, index) => (
                                         <li key={index}>
@@ -29,11 +35,9 @@ const Product = ({productDataPromise}) => {
                                     ))
                                 }
 
-
-
                             </ul>
                             <div className="mt-6">
-                                <button className="text-white bg-linear-to-r from-[#4f39f6] to-[#9514fa] btn btn-block rounded-4xl">Buy Now</button>
+                                <button id={index} onClick={() => handleBuyNowButton(product)} className="text-white bg-linear-to-r from-[#4f39f6] to-[#9514fa] btn btn-block rounded-4xl">Buy Now</button>
                             </div>
                         </div>
                     </div>

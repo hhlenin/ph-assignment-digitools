@@ -5,31 +5,37 @@ import Hero from "./components/hero/Hero.jsx";
 import Achievements from "./components/achievements/Achievements.jsx";
 import DigitalTools from "./components/digital-tools/DigitalTools.jsx";
 import GetStarted from "./components/get-started/GetStarted.jsx";
+import {useState} from "react";
 
 function App() {
-    // const notify = () => toast.info('Wow so easy !');
+    const [totalCartItems, setTotalCartItems] = useState(0);
+
 
   return (
     <>
-            {/*<ToastContainer*/}
-            {/*    position="top-center"*/}
-            {/*    autoClose={5000}*/}
-            {/*    hideProgressBar={false}*/}
-            {/*    newestOnTop={false}*/}
-            {/*    closeOnClick*/}
-            {/*    rtl={false}*/}
-            {/*    pauseOnFocusLoss*/}
-            {/*    draggable*/}
-            {/*    pauseOnHover*/}
-            {/*    theme="colored"*/}
-            {/*    transition={Bounce}*/}
-            {/*/>*/}
-            {/*<button onClick={notify}>Notify !</button>*/}
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+                transition={Bounce}
+            />
 
-      <Navbar></Navbar>
+      <Navbar
+          totalCartItems={totalCartItems}
+      ></Navbar>
         <Hero></Hero>
         <Achievements></Achievements>
-        <DigitalTools></DigitalTools>
+        <DigitalTools
+            totalCartItems={totalCartItems}
+            setTotalCartItems={setTotalCartItems}
+        ></DigitalTools>
       <GetStarted></GetStarted>
     </>
   )

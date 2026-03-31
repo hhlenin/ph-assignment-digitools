@@ -2,7 +2,7 @@ import React from 'react';
 import logoImg from '../../assets/digitools.png';
 import {IoCartOutline} from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar = ({totalCartItems}) => {
     return (
         <nav className="navbar bg-base-100 shadow-sm p-4">
             <div className="container flex">
@@ -38,7 +38,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-4 font-semibold">
-                    <button className="btn bg-white border-none"><IoCartOutline></IoCartOutline><div className="badge badge-sm badge-secondary">+99</div></button>
+                    <button className="btn bg-white border-none"><IoCartOutline></IoCartOutline><div className="badge badge-sm badge-secondary">{totalCartItems}</div></button>
                     <a href="">Login</a>
                     <a className="btn">Get Started</a>
                 </div>

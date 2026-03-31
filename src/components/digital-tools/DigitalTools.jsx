@@ -2,16 +2,29 @@ import React, {Suspense, useState} from 'react';
 import Product from "./products/Product.jsx";
 import Cart from "./cart/Cart.jsx";
 import Empty from "./cart/Empty.jsx";
+import {toast} from "react-toastify";
 
 const fetchProductData = async () => {
     const response =  await fetch("/tools-data.json");
     return response.json();
 }
 
-const DigitalTools = () => {
+const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
 
     const [button, setButton] = useState(true);
     const [cart, setCart] = useState([]);
+
+    const setCartData = (product) => {
+        setCart([...cart, product]);
+        if (cart.length >= 0) {
+            toast.success('Product added to cart 😊');
+        }
+    }
+
+    function handleTabSwitchButton(tabName) {
+        toast.info(`Switched to ${tabName}`);
+        setButton(!button)
+    }
 
     const productDataPromise = fetchProductData();
 
@@ -25,8 +38,8 @@ const DigitalTools = () => {
                         <p className="font-normal text-[#627382] lea">Choose from our curated collection of premium digital button designed <br/> to boost your productivity and creativity.</p>
                     </div>
                     <span className="flex w-fit justify-center gap-3 p-0.5 border border-[#627382] rounded-4xl">
-                        <button onClick={() => setButton(!button)} className={`${button && 'text-white btn bg-linear-to-r from-[#4f39f6] to-[#9514fa]'} rounded-4xl`}>Products</button>
-                        <button onClick={() => setButton(!button)} className={`${!button && 'text-white btn bg-linear-to-r from-[#4f39f6] to-[#9514fa]'} rounded-4xl`}>Cart (0)</button>
+                        <button onClick={() => handleTabSwitchButton('Products')} className={`${button && 'text-white btn bg-linear-to-r from-[#4f39f6] to-[#9514fa]'} rounded-4xl`}>Products</button>
+                        <button onClick={() => handleTabSwitchButton('Cart')} className={`${!button && 'text-white btn bg-linear-to-r from-[#4f39f6] to-[#9514fa]'} rounded-4xl`}>Cart ({totalCartItems})</button>
                     </span>
                     <div className="pt-10">
                         {
@@ -39,14 +52,17 @@ const DigitalTools = () => {
                                       <span className="loading loading-ball loading-lg"></span>
                                       <span className="loading loading-ball loading-xl"></span>
                                   </div>}>
-                                  <Product productDataPromise={productDataPromise}></Product>
+                                  <Product
+                                      productDataPromise={productDataPromise}
+                                      setCartData={setCartData}
+                                      totalCartItems={totalCartItems}
+                                      setTotalCartItems={setTotalCartItems}>
+                                  </Product>
                               </Suspense> :
                               cart.length === 0 ?
-                                  <Empty /> : <Cart></Cart>
+                                  <Empty /> : <Cart cart={cart} />
                         }
 
-
-                        {/*<Empty></Empty>*/}
                     </div>
                 </div>
             </div>
