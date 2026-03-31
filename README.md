@@ -1,16 +1,74 @@
-# React + Vite
+# 🚀 DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**DigiTools** is a modern digital tools marketplace UI where users can browse different products, view their features, and add them to a cart. The application provides a clean and responsive interface with real-time cart updates and toast notifications for user interactions.
 
-Currently, two official plugins are available:
+The project focuses on component-based design, state management, and interactive UI behavior using React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🧾 Project Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+DigiTools is a responsive React-based web application that allows users to explore digital products such as templates and productivity tools. Users can easily switch between the product list and the cart section, add products to their cart, remove them, and proceed to checkout.
 
-## Expanding the ESLint configuration
+The UI is designed based on this [**Figma Layout**](https://github.com/ProgrammingHero1/B13-A6-DigiTools-Platform/blob/main/DigiTools.fig) , ensuring a clean and user-friendly experience across all devices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+- ⚛️ React.js
+- 🎨 CSS / Responsive Design
+- 📦 React Toastify (for notifications)
+- 📄 JSON Data (for product information)
+- 🧩 Component-Based Architecture
+
+---
+
+## ✨ Key Features
+
+### 🛍️ Product Listing
+- Each product card shows:
+    - Name
+    - Description
+    - Price & period
+    - Tag (Popular / New / Best Seller)
+    - Feature list
+    - Icon
+
+---
+
+### 🛒 Interactive Cart System
+- Add products directly from the product cards
+- Navbar shows **total number of selected products**
+- Cart section displays:
+    - Product name
+    - Icon
+    - Price
+    - Remove button
+
+---
+
+### 🔔 Smart Notifications
+- Uses **React Toastify** to display alerts when:
+    - Product is added to cart
+    - Product is removed from cart
+    - Checkout is completed
+
+---
+
+## 📱 Responsive Design
+
+The entire application is **fully responsive** and works smoothly across:
+
+- 💻 Desktop
+- 📱 Mobile
+- 📟 Tablet
+
+---
+
+## 🧮 Cart Features
+
+- Shows **total number of products in the cart**
+- Displays **total price of selected products**
+- **Remove button** allows deleting individual products
+- **Proceed to Checkout** clears the entire cart
