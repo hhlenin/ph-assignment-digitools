@@ -12,11 +12,11 @@ const fetchProductData = async () => {
 const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
 
     const [button, setButton] = useState(true);
-    const [cart, setCart] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
 
     const setCartData = (product) => {
-        setCart([...cart, product]);
-        if (cart.length >= 0) {
+        setCartItems([...cartItems, product]);
+        if (cartItems.length >= 0) {
             toast.success('Product added to cart 😊');
         }
     }
@@ -59,8 +59,12 @@ const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
                                       setTotalCartItems={setTotalCartItems}>
                                   </Product>
                               </Suspense> :
-                              cart.length === 0 ?
-                                  <Empty /> : <Cart cart={cart} />
+                              cartItems.length === 0 ?
+                                  <Empty /> :
+                                  <Cart
+                                      cartItems={cartItems}
+                                      setCartItems={setCartItems}
+                                  />
                         }
 
                     </div>

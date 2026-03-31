@@ -1,13 +1,19 @@
-import React, {useState} from 'react';
-import product from "../products/Product.jsx";
-// import randIng from "../../../../public/products/design-tool.png";
+import React from 'react';
+import {toast} from "react-toastify";
 
-const Cart = ({cart}) => {
+const Cart = ({cartItems, setCartItems}) => {
 
-    let total = 0;
-    cart.forEach((product) => {
-        total += parseInt(product.price);
+    let cartTotalPrice = 0;
+    cartItems.forEach((product) => {
+        cartTotalPrice += parseInt(product.price);
     })
+    function handleRemoveButtonClick(product) {
+        const newCart = cartItems.filter((item) => {
+            return item.id !== product.id;
+        });
+        setCartItems(newCart);
+        toast.warning('Item removed from the cart 👍');
+    }
     return (
         <div className="">
 
@@ -15,7 +21,7 @@ const Cart = ({cart}) => {
                     <div className="card-body">
                         <h2 className="card-title">Your Cart</h2>
                             {
-                                cart.map((item, index) => (
+                                cartItems.map((item, index) => (
                                     <div key={index} className="card bg-base-100 shadow-sm">
                                     <div className="card-body bg-[#f9fafc]">
                                         <div className="flex items-center justify-between">
@@ -28,7 +34,7 @@ const Cart = ({cart}) => {
                                             </div>
 
                                             <div className="card-actions">
-                                                <button className="btn text-error">Remove</button>
+                                                <button onClick={() => handleRemoveButtonClick(item)} className="btn text-error">Remove</button>
                                             </div>
                                         </div>
                                     </div>
@@ -38,7 +44,7 @@ const Cart = ({cart}) => {
 
                         <div className='py-6 flex justify-between'>
                             <p className="text-[#627382]">Total :</p>
-                            <p className="text-xl font-bold text-right">${total}</p>
+                            <p className="text-xl font-bold text-right">${cartTotalPrice}</p>
                         </div>
 
                         <div className="card-actions">
