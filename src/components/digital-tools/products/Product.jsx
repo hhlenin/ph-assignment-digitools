@@ -1,11 +1,11 @@
-import {use, useState} from 'react';
+import {use} from 'react';
 
 const Product = ({productDataPromise, disableButton, handleBuyNowButton}) => {
     const products = use(productDataPromise)
 
 
     return (
-        <div className="grid grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 sm:gap-7">
             {
                 products.map((product, index) => (
                     <div key={index} className="card bg-base-100 shadow-sm">

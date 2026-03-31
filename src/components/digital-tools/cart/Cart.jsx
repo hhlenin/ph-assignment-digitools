@@ -25,15 +25,15 @@ const Cart = ({cartItems, setCartItems, totalCartItems, setTotalCartItems, setDi
     return (
         <div className="">
 
-            <div className="card card-xl lg:w-300 shadow-md">
+            <div className="card card-xl shadow-md">
                     <div className="card-body">
                         <h2 className="card-title">Your Cart</h2>
                             {
                                 cartItems.map((item, index) => (
                                     <div key={index} className="card bg-base-100 shadow-sm">
                                     <div className="card-body bg-[#f9fafc]">
-                                        <div className="flex items-center justify-between">
-                                            <div className="w-15 h-15 border border-[#627382] rounded-full flex justify-center items-center">
+                                        <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+                                            <div className="w-15 h-15 border border-[#627382] rounded-full flex justify-center items-center mr-4">
                                                 <img src={item.image} alt="" className="w-8 h-8"/>
                                             </div>
                                             <div className="text-left">

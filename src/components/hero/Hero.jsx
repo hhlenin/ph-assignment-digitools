@@ -6,14 +6,14 @@ import {CiPlay1} from "react-icons/ci";
 const Hero = () => {
     return (
         <div className="hero my-14">
-            <div className="container flex justify-between items-center">
+            <div className="container flex flex-col-reverse gap-1 md:gap-0 md:flex-row justify-between items-center">
                 <div className="flex-2 hero-text space-y-4">
                     <div className="badge badge-soft badge-primary  flex items-center gap-1">
                         <RxTarget></RxTarget>
                         <p className="font-medium bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent">New: AI-Powered Tools Available</p>
                     </div>
                     <div>
-                        <h1 className="text-7xl font-extrabold">Supercharge Your <br/>Digital Workflow</h1>
+                        <h1 className="text-7xl font-extrabold"><span className="text-5xl sm:text-7xl">Supercharge</span> Your <br/>Digital Workflow</h1>
                     </div>
                     <p className="text-[#627382]">Access premium AI tools, design assets, templates, and productivity <br/>
                         software—all in one place. Start creating faster today. <br/>

@@ -4,7 +4,7 @@ const Achievements = () => {
     return (
         <div className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] p-16">
             <div className="container">
-                <div className="flex justify-around">
+                <div className="flex flex-col md:flex-row gap-5 md:gap-0 justify-around">
                     <div className="text-center">
                         <h2 className="text-white text-6xl font-extrabold">50K+</h2>
                         <p className="text-white text-2xl font-medium">Active User</p>

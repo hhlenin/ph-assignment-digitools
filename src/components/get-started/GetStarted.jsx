@@ -5,13 +5,13 @@ import rocketImg from '../../assets/rocket.png';
 
 const GetStarted = () => {
     return (
-        <div className="bg-[#f9fafc] p-29">
+        <div className="bg-[#f9fafc] py-29">
             <div className="container">
                 <div className="text-center pb-10 space-y-4">
                     <h2 className="text-5xl font-extrabold">Get Started in 3 Steps</h2>
                     <p className="text-[#627382]">Start using premium digital tools in minutes, not hours.</p>
                 </div>
-                <div className="grid grid-cols-3 gap-7">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-7">
                     <div className="card shadow-md">
                         <div className="card-body space-y-4 text-center">
                             <div className="flex justify-end">
