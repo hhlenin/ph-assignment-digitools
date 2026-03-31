@@ -9,12 +9,12 @@ const Achievements = () => {
                         <h2 className="text-white text-6xl font-extrabold">50K+</h2>
                         <p className="text-white text-2xl font-medium">Active User</p>
                     </div>
-                    <div className="divider divider-[#FFFFFF] divider-horizontal"></div>
+                    <div className="divider before:bg-white after:bg-white divider-horizontal"></div>
                     <div className="text-center">
                         <h2 className="text-white text-6xl font-extrabold">200+</h2>
                         <p className="text-white text-2xl font-medium">Premium Tools</p>
                     </div>
-                    <div className="divider divider-[#FFFFFF] divider-horizontal"></div>
+                    <div className="divider before:bg-white after:bg-white divider-horizontal"></div>
                     <div className="text-center">
                         <h2 className="text-white text-6xl font-extrabold">4.9+</h2>
                         <p className="text-white text-2xl font-medium">Rating</p>

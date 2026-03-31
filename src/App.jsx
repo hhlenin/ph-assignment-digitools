@@ -8,6 +8,8 @@ import Achievements from "./components/achievements/Achievements.jsx";
 import DigitalTools from "./components/digital-tools/DigitalTools.jsx";
 import GetStarted from "./components/get-started/GetStarted.jsx";
 import Pricing from "./components/pricing/Pricing.jsx";
+import TransformWorkFlow from "./components/transform-workflow/TransformWorkFlow.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 
 function App() {
@@ -16,31 +18,32 @@ function App() {
 
   return (
     <>
-            <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="colored"
-                transition={Bounce}
+        <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+            transition={Bounce}
             />
-
-      <Navbar
+        <Navbar
           totalCartItems={totalCartItems}
-      ></Navbar>
+        ></Navbar>
         <Hero></Hero>
         <Achievements></Achievements>
         <DigitalTools
             totalCartItems={totalCartItems}
             setTotalCartItems={setTotalCartItems}
         ></DigitalTools>
-      <GetStarted></GetStarted>
+        <GetStarted></GetStarted>
         <Pricing></Pricing>
+        <TransformWorkFlow></TransformWorkFlow>
+        <Footer></Footer>
     </>
   )
 }

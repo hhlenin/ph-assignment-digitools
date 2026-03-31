@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className="container">
+        <div id="pricing" className="container">
             <div className="py-30 text-center">
                 <h2 className="text-5xl font-extrabold pb-4">Simple, Transparent Pricing</h2>
                 <p className=" pb-10">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>

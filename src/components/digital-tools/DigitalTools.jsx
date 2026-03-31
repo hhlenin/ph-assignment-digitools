@@ -30,7 +30,7 @@ const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
 
 
     return (
-        <main className="container">
+        <main id="products" className="container">
             <div className="py-32 justify-center">
                 <div className="space-y-4 flex flex-col justify-center items-center">
                     <div className="text-center space-y-4">
