@@ -1,5 +1,5 @@
 import React from 'react';
-import randIng from "../../../../public/products/design-tool.png";
+// import randIng from "../../../../public/products/design-tool.png";
 
 const Cart = () => {
     return (
@@ -12,7 +12,7 @@ const Cart = () => {
                         <div className="card-body bg-[#f9fafc]">
                             <div className="flex items-center justify-between">
                                 <div className="w-15 h-15 border border-[#627382] rounded-full flex justify-center items-center">
-                                    <img src={randIng} alt="" className="w-8 h-8"/>
+                                    <img src="" alt="" className="w-8 h-8"/>
                                 </div>
                                 <div className="text-left">
                                     <h2 className="card-title">Card Title</h2>
