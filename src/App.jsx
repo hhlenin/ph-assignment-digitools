@@ -1,11 +1,14 @@
 import './App.css'
-import {ToastContainer, toast, Bounce} from 'react-toastify';
+import {ToastContainer, Bounce} from 'react-toastify';
+import {useState} from "react";
+
 import Navbar from "./components/navbar/Navbar.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import Achievements from "./components/achievements/Achievements.jsx";
 import DigitalTools from "./components/digital-tools/DigitalTools.jsx";
 import GetStarted from "./components/get-started/GetStarted.jsx";
-import {useState} from "react";
+import Pricing from "./components/pricing/Pricing.jsx";
+
 
 function App() {
     const [totalCartItems, setTotalCartItems] = useState(0);
@@ -37,6 +40,7 @@ function App() {
             setTotalCartItems={setTotalCartItems}
         ></DigitalTools>
       <GetStarted></GetStarted>
+        <Pricing></Pricing>
     </>
   )
 }
