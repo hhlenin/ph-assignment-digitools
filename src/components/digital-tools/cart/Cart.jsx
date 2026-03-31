@@ -34,7 +34,7 @@ const Cart = ({cartItems, setCartItems, totalCartItems, setTotalCartItems, setDi
                                     <div className="card-body bg-[#f9fafc]">
                                         <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
                                             <div className="w-15 h-15 border border-[#627382] rounded-full flex justify-center items-center mr-4">
-                                                <img src={item.image} alt="" className="w-8 h-8"/>
+                                                <img src={item.icon} alt="" className="w-8 h-8"/>
                                             </div>
                                             <div className="text-left">
                                                 <h2 className="card-title">{item.name}</h2>

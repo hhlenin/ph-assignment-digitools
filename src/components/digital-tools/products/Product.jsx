@@ -11,15 +11,15 @@ const Product = ({productDataPromise, disableButton, handleBuyNowButton}) => {
                     <div key={index} className="card bg-base-100 shadow-sm">
                         <div className="card-body space-y-4">
                             <div className="text-right">
-                                <span className={`text-right badge badge-soft capitalize ${product.category === 'best seller' ? 'badge-warning' : product.category === 'popular' ? 'badge-primary' : 'badge-success'} `}>{product.category}</span>
+                                <span className={`text-right badge badge-soft capitalize ${product.tagType === 'best seller' ? 'badge-warning' : product.tagType === 'popular' ? 'badge-primary' : 'badge-success'} `}>{product.tagType}</span>
                             </div>
                             <div className="w-15 h-15 border border-[#627382] rounded-full flex justify-center items-center">
-                                <img src={product.image} alt="" className="w-8 h-8"/>
+                                <img src={product.icon} alt="" className="w-8 h-8"/>
                             </div>
                             <h2 className="text-2xl font-bold">{product.name}</h2>
                             <p>{product.description}</p>
 
-                            <span className="text-xl font-bold">${product.price}<span className="text-[#627382] capitalize">/{product.recurrence}</span></span>
+                            <span className="text-xl font-bold">${product.price}<span className="text-[#627382] capitalize">/{product.period}</span></span>
                             <ul className=" flex flex-col gap-2 text-xs">
 
                                 {
