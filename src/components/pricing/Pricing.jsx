@@ -18,7 +18,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Access to 10 free tools</span>
@@ -27,7 +27,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Basic templates</span>
@@ -36,7 +36,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Community support</span>
@@ -45,7 +45,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">1 project per month</span>
@@ -68,7 +68,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium ">Access to all premium tools</span>
@@ -77,7 +77,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium ">Unlimited templates</span>
@@ -86,7 +86,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium ">Priority support</span>
@@ -95,7 +95,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium ">Unlimited projects</span>
@@ -104,7 +104,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium ">Cloud sync</span>
@@ -113,7 +113,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium ">Advanced analytics</span>
@@ -135,7 +135,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Everything in Pro</span>
@@ -144,7 +144,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Team collaboration</span>
@@ -153,7 +153,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Custom integrations</span>
@@ -162,7 +162,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Dedicated support</span>
@@ -171,7 +171,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">SLA guarantee</span>
@@ -180,7 +180,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Custom branding</span>
@@ -189,7 +189,7 @@ const Pricing = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          className="size-4 me-2 inline-block text-success" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                     <span className="font-medium text-[#627382]">Contact Sales</span>

@@ -28,6 +28,14 @@ const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
 
     const productDataPromise = fetchProductData();
 
+    const [disableButton, setDisableButton] = useState([]);
+
+    function handleBuyNowButton(btnID, product) {
+        setCartData(product);
+        setTotalCartItems(totalCartItems + 1);
+        setDisableButton([...disableButton, btnID]);
+    }
+
 
     return (
         <main id="products" className="container">
@@ -56,7 +64,10 @@ const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
                                       productDataPromise={productDataPromise}
                                       setCartData={setCartData}
                                       totalCartItems={totalCartItems}
-                                      setTotalCartItems={setTotalCartItems}>
+                                      setTotalCartItems={setTotalCartItems}
+                                      disableButton={disableButton}
+                                      handleBuyNowButton={handleBuyNowButton}
+                                  >
                                   </Product>
                               </Suspense> :
                               cartItems.length === 0 ?

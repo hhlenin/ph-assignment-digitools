@@ -1,15 +1,8 @@
 import {use, useState} from 'react';
 
-const Product = ({productDataPromise, setCartData, totalCartItems, setTotalCartItems}) => {
+const Product = ({productDataPromise, disableButton, handleBuyNowButton}) => {
     const products = use(productDataPromise)
-    const [disableButton, setDisableButton] = useState([]);
 
-    function handleBuyNowButton(btnID, product) {
-        setCartData(product);
-        setTotalCartItems(totalCartItems + 1);
-        setDisableButton([...disableButton, btnID]);
-        console.log(btnID, product);
-    }
 
     return (
         <div className="grid grid-cols-3 gap-7">
