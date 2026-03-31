@@ -1,11 +1,14 @@
-import {use} from 'react';
+import {use, useState} from 'react';
 
 const Product = ({productDataPromise, setCartData, totalCartItems, setTotalCartItems}) => {
     const products = use(productDataPromise)
+    const [disableButton, setDisableButton] = useState([]);
 
-    function handleBuyNowButton(product) {
+    function handleBuyNowButton(btnID, product) {
         setCartData(product);
         setTotalCartItems(totalCartItems + 1);
+        setDisableButton([...disableButton, btnID]);
+        console.log(btnID, product);
     }
 
     return (
@@ -37,7 +40,7 @@ const Product = ({productDataPromise, setCartData, totalCartItems, setTotalCartI
 
                             </ul>
                             <div className="mt-6">
-                                <button id={index} onClick={() => handleBuyNowButton(product)} className="text-white bg-linear-to-r from-[#4f39f6] to-[#9514fa] btn btn-block rounded-4xl">Buy Now</button>
+                                <button disabled={disableButton.includes(index)} onClick={() => handleBuyNowButton(index, product)} className={`text-white ${!disableButton.includes(index) ? 'bg-linear-to-r from-[#4f39f6] to-[#9514fa]' : 'btn-disabled'} btn btn-block rounded-4xl`}>{!disableButton.includes(index)? "Buy Now" : "Added"}</button>
                             </div>
                         </div>
                     </div>
