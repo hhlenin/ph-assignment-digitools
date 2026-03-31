@@ -9,6 +9,9 @@ const fetchProductData = async () => {
     return response.json();
 }
 
+const productDataPromise = fetchProductData();
+
+
 const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
 
     const [button, setButton] = useState(true);
@@ -26,7 +29,6 @@ const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
         setButton(!button)
     }
 
-    const productDataPromise = fetchProductData();
 
     const [disableButton, setDisableButton] = useState([]);
 
