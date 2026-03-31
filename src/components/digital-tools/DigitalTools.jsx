@@ -17,7 +17,7 @@ const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
     const setCartData = (product) => {
         setCartItems([...cartItems, product]);
         if (cartItems.length >= 0) {
-            toast.success('Product added to cart 😊');
+            toast.success(`${product.name} added to cart 😊`);
         }
     }
 
@@ -62,6 +62,8 @@ const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
                               cartItems.length === 0 ?
                                   <Empty /> :
                                   <Cart
+                                      totalCartItems={totalCartItems}
+                                      setTotalCartItems={setTotalCartItems}
                                       cartItems={cartItems}
                                       setCartItems={setCartItems}
                                   />

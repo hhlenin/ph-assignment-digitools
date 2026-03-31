@@ -1,7 +1,7 @@
 import React from 'react';
 import {toast} from "react-toastify";
 
-const Cart = ({cartItems, setCartItems}) => {
+const Cart = ({cartItems, setCartItems, totalCartItems, setTotalCartItems}) => {
 
     let cartTotalPrice = 0;
     cartItems.forEach((product) => {
@@ -12,7 +12,14 @@ const Cart = ({cartItems, setCartItems}) => {
             return item.id !== product.id;
         });
         setCartItems(newCart);
-        toast.warning('Item removed from the cart 👍');
+        setTotalCartItems(totalCartItems - 1)
+        toast.warning(`${product.name} removed from the cart 👍`);
+    }
+
+    function handleCheckoutClick() {
+        toast.success('Checking out Complete ❤️');
+        setCartItems([])
+        setTotalCartItems(0)
     }
     return (
         <div className="">
@@ -48,7 +55,7 @@ const Cart = ({cartItems, setCartItems}) => {
                         </div>
 
                         <div className="card-actions">
-                            <button
+                            <button onClick={() => handleCheckoutClick()}
                                 className="btn text-white bg-linear-to-r from-[#4f39f6] to-[#9514fa] btn-block rounded-4xl">Proceed
                                 To Checkout
                             </button>
