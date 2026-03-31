@@ -1,7 +1,7 @@
 import React from 'react';
 import {toast} from "react-toastify";
 
-const Cart = ({cartItems, setCartItems, totalCartItems, setTotalCartItems}) => {
+const Cart = ({cartItems, setCartItems, totalCartItems, setTotalCartItems, setDisableButton}) => {
 
     let cartTotalPrice = 0;
     cartItems.forEach((product) => {
@@ -20,11 +20,12 @@ const Cart = ({cartItems, setCartItems, totalCartItems, setTotalCartItems}) => {
         toast.success('Checking out Complete ❤️');
         setCartItems([])
         setTotalCartItems(0)
+        setDisableButton([])
     }
     return (
         <div className="">
 
-            <div className="card card-xl lg:w-[1200px] shadow-md">
+            <div className="card card-xl lg:w-300 shadow-md">
                     <div className="card-body">
                         <h2 className="card-title">Your Cart</h2>
                             {
