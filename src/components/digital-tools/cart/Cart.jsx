@@ -1,17 +1,15 @@
 import React from 'react';
 import {toast} from "react-toastify";
 
-const Cart = ({cartItems, setCartItems, totalCartItems, setTotalCartItems, setDisableButton}) => {
+const Cart = ({cartItems, setCartItems, totalCartItems, setTotalCartItems, disableButton, setDisableButton}) => {
 
     let cartTotalPrice = 0;
     cartItems.forEach((product) => {
         cartTotalPrice += parseInt(product.price);
     })
     function handleRemoveButtonClick(product) {
-        const newCart = cartItems.filter((item) => {
-            return item.id !== product.id;
-        });
-        setCartItems(newCart);
+        setCartItems(cartItems.filter((item) => item.id !== product.id));
+        setDisableButton(disableButton.filter((button) => button !== product.id));
         setTotalCartItems(totalCartItems - 1)
         toast.warning(`${product.name} removed from the cart 👍`);
     }

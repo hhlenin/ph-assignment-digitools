@@ -33,7 +33,7 @@ const Product = ({productDataPromise, disableButton, handleBuyNowButton}) => {
 
                             </ul>
                             <div className="mt-6">
-                                <button disabled={disableButton.includes(index)} onClick={() => handleBuyNowButton(index, product)} className={`text-white ${!disableButton.includes(index) ? 'bg-linear-to-r from-[#4f39f6] to-[#9514fa]' : 'btn-disabled'} btn btn-block rounded-4xl`}>{!disableButton.includes(index)? "Buy Now" : "Added"}</button>
+                                <button disabled={disableButton.includes(product.id)} onClick={() => handleBuyNowButton(product.id, product)} className={`text-white ${!disableButton.includes(product.id) ? 'bg-linear-to-r from-[#4f39f6] to-[#9514fa]' : 'btn-disabled'} btn btn-block rounded-4xl`}>{!disableButton.includes(product.id)? "Buy Now" : "Added"}</button>
                             </div>
                         </div>
                     </div>

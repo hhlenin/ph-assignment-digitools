@@ -79,6 +79,7 @@ const DigitalTools = ({totalCartItems, setTotalCartItems}) => {
                                       setTotalCartItems={setTotalCartItems}
                                       cartItems={cartItems}
                                       setCartItems={setCartItems}
+                                      disableButton={disableButton}
                                       setDisableButton={setDisableButton}
                                   />
                         }
